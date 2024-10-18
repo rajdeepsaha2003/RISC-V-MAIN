@@ -1,5 +1,5 @@
 # RISC-V Processor Implementation in Verilog
-
+![RISC-V Processor Diagram](images/processor-diagram.png)
 This project implements a simplified RISC-V processor in Verilog, showcasing the fundamental components and their interconnections for executing RISC-V instructions. The design includes modules such as the ALU, Register File, Control Unit, and Instruction Fetch Unit, with corresponding testbenches for verification. This project is implemented in Xilinx ISE 8.1i.
 
 ## Project Structure
