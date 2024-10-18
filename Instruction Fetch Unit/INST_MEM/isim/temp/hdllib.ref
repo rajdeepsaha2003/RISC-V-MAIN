@@ -1,0 +1,5 @@
+MO tb_inst_mem_v NULL "C:\Users\rajde\OneDrive\Desktop\RISC-V\Instruction Fetch Unit\INST_MEM/tb_inst_mem.v" vlg2A/tb__inst__mem__v.bin 1729264689
+MO INST_MEM NULL "C:\Users\rajde\OneDrive\Desktop\RISC-V\Instruction Fetch Unit\INST_MEM/INST_MEM.v" vlg64/_i_n_s_t___m_e_m.bin 1729264689
+MO INST_MEM_tb_v NULL "C:\Users\rajde\OneDrive\Desktop\RISC-V\Instruction Fetch Unit\INST_MEM/INST_MEM_tb.v" vlg2A/_i_n_s_t___m_e_m__tb__v.bin 1729181179
+MO glbl NULL E:/Xilinx/verilog/src/glbl.v vlg2D/glbl.bin 1729264689
+MO tb_INST_MEM NULL "C:\Users\rajde\OneDrive\Desktop\RISC-V\Instruction Fetch Unit\INST_MEM/INST_MEM_tb.v" vlg61/tb___i_n_s_t___m_e_m.bin 1729261918

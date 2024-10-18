@@ -1,0 +1,11 @@
+V3 8
+FL $XILINX/verilog/src/glbl.v 2005/11/16.16:04:44 I.24
+MO isim_temp/glbl       FL $XILINX/verilog/src/glbl.v
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Register_File/Reg_File.v 2024/10/18.19:49:45 I.24
+MO isim_temp/REG_FILE \
+      FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Register_File/Reg_File.v
+FL REG_FILE.v 2024/10/18.19:31:37 I.24
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Register_File/tb_reg_file.v 2024/10/18.20:42:53 I.24
+MO isim_temp/tb_reg_file_v \
+      FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Register_File/tb_reg_file.v \
+      MI REG_FILE

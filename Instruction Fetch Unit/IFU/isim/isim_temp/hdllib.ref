@@ -1,0 +1,4 @@
+MO INST_MEM NULL "C:/Users/rajde/OneDrive/Desktop/RISC-V/Instruction Fetch Unit/INST_MEM/INST_MEM.v" vlg64/_i_n_s_t___m_e_m.bin 1729259366
+MO IFU NULL "C:\Users\rajde\OneDrive\Desktop\RISC-V\Instruction Fetch Unit\IFU/IFU.v" vlg54/_i_f_u.bin 1729259366
+MO glbl NULL E:/Xilinx/verilog/src/glbl.v vlg2D/glbl.bin 1729259366
+MO tb_IFU NULL "C:\Users\rajde\OneDrive\Desktop\RISC-V\Instruction Fetch Unit\IFU/IFU_tb.v" vlg7D/tb___i_f_u.bin 1729259366

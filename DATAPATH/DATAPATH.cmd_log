@@ -1,0 +1,1 @@
+xst -ise "C:/Users/rajde/OneDrive/Desktop/RISC-V/DATAPATH/DATAPATH" -intstyle ise -ifn DATAPATH.xst -ofn DATAPATH.syr

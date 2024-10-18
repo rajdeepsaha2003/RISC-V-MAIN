@@ -1,0 +1,23 @@
+V3 25
+FL $XILINX/verilog/src/glbl.v 2005/11/16.16:04:44 I.24
+MO isim_temp/glbl       FL $XILINX/verilog/src/glbl.v
+FL IFU.v 2024/10/17.21:25:20 I.24 FL INST_MEM.v
+MO isim_temp/IFU        FL IFU.v          MI INST_MEM
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Processor/tb_Processor.v 2024/10/18.19:42:07 I.24
+MO isim_temp/tb_Processor_v \
+      FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Processor/tb_Processor.v \
+      MI PROCESSOR
+FL ALU.v 2024/10/17.21:25:20 I.24
+MO isim_temp/ALU        FL ALU.v
+FL CONTROL.v 2024/10/17.21:25:20 I.24
+MO isim_temp/CONTROL    FL CONTROL.v
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Processor/Processor.v 2024/10/18.19:42:14 I.24 FL CONTROL.v FL DATAPATH.v FL IFU.v
+MO isim_temp/PROCESSOR \
+      FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Processor/Processor.v MI CONTROL \
+      MI DATAPATH       MI IFU
+FL REG_FILE.v 2024/10/17.21:25:20 I.24
+MO isim_temp/REG_FILE   FL REG_FILE.v
+FL DATAPATH.v 2024/10/17.21:25:20 I.24 FL REG_FILE.v FL ALU.v
+MO isim_temp/DATAPATH   FL DATAPATH.v     MI ALU            MI REG_FILE
+FL INST_MEM.v 2024/10/17.21:25:20 I.24
+MO isim_temp/INST_MEM   FL INST_MEM.v

@@ -1,0 +1,33 @@
+ command line:
+   ./tb_reg_file_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  51241
+
+Fri Oct 18 20:43:03 2024
+
+Total Line Count = 115
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 78.7988 Meg. 
+
+ Total signals 19
+ Total nets 122
+ Total signal drivers 12
+ Total blocks 3
+ Total primitive blocks 2
+ Total processes 19
+ntrace select -o on -n /tb_reg_file_v/read_data1 
+ntrace select -o on -n /tb_reg_file_v/read_data2 
+ntrace select -o on -n /tb_reg_file_v/clock 
+ntrace select -o on -n /tb_reg_file_v/regwrite 
+ntrace select -o on -n /tb_reg_file_v/write_reg 
+ntrace select -o on -n /tb_reg_file_v/read_reg_num1 
+ntrace select -o on -n /tb_reg_file_v/read_reg_num2 
+ntrace select -o on -n /tb_reg_file_v/write_data 
+ntrace select -o on -n /tb_reg_file_v/reset 
+ntrace start 
+run 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

@@ -1,0 +1,4 @@
+verilog work "Processor.v"
+verilog work "IFU.v"
+verilog work "tb_Processor.v"
+verilog work "E:/Xilinx/verilog/src/glbl.v"

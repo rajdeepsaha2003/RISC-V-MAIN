@@ -1,0 +1,8 @@
+V3 7
+FL $XILINX/verilog/src/glbl.v 2005/11/16.16:04:44 I.24
+MO work/glbl            FL $XILINX/verilog/src/glbl.v
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/ALU/tb_ALU.v 2024/10/18.20:39:14 I.24
+MO work/tb_ALU_v        FL C:/Users/rajde/OneDrive/Desktop/RISC-V/ALU/tb_ALU.v \
+      MI ALU
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/ALU/ALU.v 2024/10/18.20:39:25 I.24
+MO work/ALU             FL C:/Users/rajde/OneDrive/Desktop/RISC-V/ALU/ALU.v

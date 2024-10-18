@@ -1,0 +1,523 @@
+Release 8.1i - xst I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.24 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.24 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: PROCESSOR.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+     5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PROCESSOR.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PROCESSOR"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-pq208
+
+---- Source Options
+Top Module Name                    : PROCESSOR
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : PROCESSOR.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "IFU.v" in library work
+Compiling verilog include file "INST_MEM.v"
+Module <INST_MEM> compiled
+Compiling verilog file "DATAPATH.v" in library work
+Compiling verilog include file "REG_FILE.v"
+Module <IFU> compiled
+Compiling verilog include file "ALU.v"
+Module <REG_FILE> compiled
+Module <ALU> compiled
+Compiling verilog file "CONTROL.v" in library work
+Module <DATAPATH> compiled
+Compiling verilog file "Processor.v" in library work
+Module <CONTROL> compiled
+Module <PROCESSOR> compiled
+No errors in compilation
+Analysis of file <"PROCESSOR.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <PROCESSOR>.
+Module <PROCESSOR> is correct for synthesis.
+ 
+Analyzing module <IFU>.
+Module <IFU> is correct for synthesis.
+ 
+Analyzing module <INST_MEM>.
+INFO:Xst:1607 - Contents of array <Memory> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1607 - Contents of array <Memory> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1607 - Contents of array <Memory> may be accessed with an index that does not cover the full array size.
+INFO:Xst:1607 - Contents of array <Memory> may be accessed with an index that does not cover the full array size.
+Module <INST_MEM> is correct for synthesis.
+ 
+Analyzing module <CONTROL>.
+Module <CONTROL> is correct for synthesis.
+ 
+Analyzing module <DATAPATH>.
+Module <DATAPATH> is correct for synthesis.
+ 
+Analyzing module <REG_FILE>.
+Module <REG_FILE> is correct for synthesis.
+ 
+Analyzing module <ALU>.
+Module <ALU> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+INFO:Xst:1304 - Contents of register <Memory<3>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<2>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<1>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<0>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<7>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<6>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<5>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<4>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<11>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<10>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<9>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<8>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<15>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<14>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<13>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<12>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<19>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<18>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<17>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<16>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<23>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<22>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<21>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<20>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<27>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<26>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<25>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<24>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<31>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<30>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<29>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <Memory<28>> in unit <INST_MEM> never changes during circuit operation. The register is replaced by logic.
+INFO:Xst:1304 - Contents of register <regwrite_control> in unit <CONTROL> never changes during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <ALU>.
+    Related source file is "ALU.v".
+WARNING:Xst:643 - "ALU.v" line 44: The result of a 32x32-bit multiplication is partially used. Only the 32 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:737 - Found 32-bit latch for signal <$old_alu_result_4>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefuly review if it was in your intentions to describe such a latch.
+    Found 32-bit shifter logical left for signal <$n0006> created at line 42.
+    Found 32-bit shifter logical right for signal <$n0007> created at line 43.
+    Found 32-bit addsub for signal <$n0008>.
+    Found 32x32-bit multiplier for signal <$n0009> created at line 44.
+    Found 32-bit 9-to-1 multiplexer for signal <$n0010>.
+    Found 32-bit xor2 for signal <$n0012> created at line 45.
+    Found 32-bit comparator less for signal <$n0018> created at line 37.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   1 Comparator(s).
+	inferred  32 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <REG_FILE>.
+    Related source file is "REG_FILE.v".
+WARNING:Xst:647 - Input <reset> is never used.
+WARNING:Xst:1872 - Variable <i> is used but never assigned.
+    Found 32x32-bit ROM for signal <read_data2>.
+    Found 32x32-bit ROM for signal <read_data1>.
+    Found 1024-bit register for signal <reg_memory>.
+INFO:Xst:738 - HDL ADVISOR - 1024 flip-flops were inferred for signal <reg_memory>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   2 ROM(s).
+	inferred 1024 D-type flip-flop(s).
+Unit <REG_FILE> synthesized.
+
+
+Synthesizing Unit <INST_MEM>.
+    Related source file is "INST_MEM.v".
+    Found 32x8-bit ROM for signal <$n0000> created at line 14.
+    Found 32x8-bit ROM for signal <$n0001> created at line 14.
+    Found 32x8-bit ROM for signal <$n0002> created at line 14.
+    Found 32x8-bit ROM for signal <$n0003> created at line 14.
+    Found 32-bit adder carry out for signal <$n0004>.
+    Found 32-bit adder carry out for signal <$n0005>.
+    Found 32-bit adder carry out for signal <$n0006>.
+    Summary:
+	inferred   4 ROM(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <INST_MEM> synthesized.
+
+
+Synthesizing Unit <DATAPATH>.
+    Related source file is "DATAPATH.v".
+Unit <DATAPATH> synthesized.
+
+
+Synthesizing Unit <CONTROL>.
+    Related source file is "CONTROL.v".
+WARNING:Xst:737 - Found 4-bit latch for signal <alu_control>.
+    Found 4-bit 8-to-1 multiplexer for signal <$n0001> created at line 14.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <CONTROL> synthesized.
+
+
+Synthesizing Unit <IFU>.
+    Related source file is "IFU.v".
+    Found 32-bit up accumulator for signal <PC>.
+    Summary:
+	inferred   1 Accumulator(s).
+Unit <IFU> synthesized.
+
+
+Synthesizing Unit <PROCESSOR>.
+    Related source file is "Processor.v".
+Unit <PROCESSOR> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 6
+ 32x32-bit ROM                                         : 2
+ 32x8-bit ROM                                          : 4
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder carry out                                : 3
+ 32-bit addsub                                         : 1
+# Accumulators                                         : 1
+ 32-bit up accumulator                                 : 1
+# Registers                                            : 32
+ 32-bit register                                       : 32
+# Latches                                              : 2
+ 32-bit latch                                          : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 2
+ 32-bit 9-to-1 multiplexer                             : 1
+ 4-bit 8-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 6
+ 32x32-bit ROM                                         : 2
+ 32x8-bit ROM                                          : 4
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder carry out                                : 3
+ 32-bit addsub                                         : 1
+# Accumulators                                         : 1
+ 32-bit up accumulator                                 : 1
+# Latches                                              : 2
+ 32-bit latch                                          : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 2
+ 32-bit 9-to-1 multiplexer                             : 1
+ 4-bit 8-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Loading device for application Rf_Device from file '3s50.nph' in environment E:\Xilinx.
+WARNING:Xst:1293 - FF/Latch  <IFU_module/PC_0> has a constant value of 0 in block <PROCESSOR>.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch  <IFU_module/PC_1> has a constant value of 0 in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_5> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_6> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_7> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_8> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_9> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_10> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_11> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_12> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_13> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_14> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_15> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_16> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_17> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_18> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_19> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_20> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_21> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_22> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_23> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_24> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_25> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_26> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_27> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_28> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_29> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_30> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1291 - FF/Latch <IFU_module/PC_31> is unconnected in block <PROCESSOR>.
+WARNING:Xst:1294 - Latch <control_module/alu_control_3> is equivalent to a wire in block <PROCESSOR>.
+WARNING:Xst:1294 - Latch <control_module/alu_control_2> is equivalent to a wire in block <PROCESSOR>.
+WARNING:Xst:1294 - Latch <control_module/alu_control_1> is equivalent to a wire in block <PROCESSOR>.
+WARNING:Xst:1294 - Latch <control_module/alu_control_0> is equivalent to a wire in block <PROCESSOR>.
+WARNING:Xst:2170 - Unit PROCESSOR : the following signal(s) form a combinatorial loop: alu_control<0>.
+WARNING:Xst:2170 - Unit PROCESSOR : the following signal(s) form a combinatorial loop: alu_control<3>.
+WARNING:Xst:2170 - Unit PROCESSOR : the following signal(s) form a combinatorial loop: alu_control<2>.
+WARNING:Xst:2170 - Unit PROCESSOR : the following signal(s) form a combinatorial loop: alu_control<1>.
+
+Optimizing unit <PROCESSOR> ...
+
+Optimizing unit <ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PROCESSOR, actual ratio is 23.
+FlipFlop IFU_module/PC_2 has been replicated 1 time(s)
+FlipFlop IFU_module/PC_3 has been replicated 1 time(s)
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PROCESSOR.ngr
+Top Level Output File Name         : PROCESSOR
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 3
+
+Cell Usage :
+# BELS                             : 397
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1_L                      : 2
+#      LUT2                        : 96
+#      LUT3                        : 36
+#      LUT4                        : 76
+#      MUXCY                       : 100
+#      MUXF5                       : 17
+#      MUXF6                       : 5
+#      VCC                         : 1
+#      XORCY                       : 62
+# FlipFlops/Latches                : 37
+#      FDC                         : 5
+#      LD                          : 32
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+# MULTs                            : 3
+#      MULT18X18                   : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                     131  out of    768    17%  
+ Number of Slice Flip Flops:            37  out of   1536     2%  
+ Number of 4 input LUTs:               210  out of   1536    13%  
+ Number of bonded IOBs:                  3  out of    124     2%  
+ Number of MULT18X18s:                   3  out of      4    75%  
+ Number of GCLKs:                        2  out of      8    25%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------+--------------------------------------------------------+-------+
+Clock Signal                                                            | Clock buffer(FF name)                                  | Load  |
+------------------------------------------------------------------------+--------------------------------------------------------+-------+
+clock                                                                   | BUFGP                                                  | 5     |
+datapath_module/alu_module/_n00191(datapath_module/alu_module/_n00191:O)| BUFG(*)(datapath_module/alu_module/_old_alu_result_4_9)| 32    |
+------------------------------------------------------------------------+--------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.663ns (Maximum Frequency: 273.006MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 8.628ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 3.663ns (frequency: 273.006MHz)
+  Total number of paths / destination ports: 9 / 5
+-------------------------------------------------------------------------
+Delay:               3.663ns (Levels of Logic = 2)
+  Source:            IFU_module/PC_4 (FF)
+  Destination:       IFU_module/PC_4 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: IFU_module/PC_4 to IFU_module/PC_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             26   0.626   1.841  IFU_module/PC_4 (IFU_module/PC_4)
+     LUT1_L:I0->LO         0   0.479   0.000  IFU_module/PC_4_rt (IFU_module/PC_4_rt)
+     XORCY:LI->O           1   0.541   0.000  PROCESSOR_Result<4>_xor (Result<4>)
+     FDC:D                     0.176          IFU_module/PC_4
+    ----------------------------------------
+    Total                      3.663ns (1.822ns logic, 1.841ns route)
+                                       (49.7% logic, 50.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'datapath_module/alu_module/_n00191'
+  Total number of paths / destination ports: 32 / 1
+-------------------------------------------------------------------------
+Offset:              8.628ns (Levels of Logic = 10)
+  Source:            datapath_module/alu_module/_old_alu_result_4_8 (LATCH)
+  Destination:       zero (PAD)
+  Source Clock:      datapath_module/alu_module/_n00191 falling
+
+  Data Path: datapath_module/alu_module/_old_alu_result_4_8 to zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.551   0.976  datapath_module/alu_module/_old_alu_result_4_8 (datapath_module/alu_module/_old_alu_result_4_8)
+     LUT4:I0->O            1   0.479   0.000  datapath_module/alu_module/_n0015_wg_sel (N7)
+     MUXCY:S->O            1   0.435   0.000  datapath_module/alu_module/_n0015_wg_cy (datapath_module/alu_module/_n0015_wg_cy)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/alu_module/_n0015_wg_cy_rn_0 (datapath_module/alu_module/_n0015_wg_cy1)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/alu_module/_n0015_wg_cy_rn_1 (datapath_module/alu_module/_n0015_wg_cy2)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/alu_module/_n0015_wg_cy_rn_2 (datapath_module/alu_module/_n0015_wg_cy3)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/alu_module/_n0015_wg_cy_rn_3 (datapath_module/alu_module/_n0015_wg_cy4)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/alu_module/_n0015_wg_cy_rn_4 (datapath_module/alu_module/_n0015_wg_cy5)
+     MUXCY:CI->O           1   0.056   0.000  datapath_module/alu_module/_n0015_wg_cy_rn_5 (datapath_module/alu_module/_n0015_wg_cy6)
+     MUXCY:CI->O           1   0.265   0.681  datapath_module/alu_module/_n0015_wg_cy_rn_6 (datapath_module/alu_module/_n0015_wg_cy7)
+     OBUF:I->O                 4.909          zero_OBUF (zero)
+    ----------------------------------------
+    Total                      8.628ns (6.972ns logic, 1.657ns route)
+                                       (80.8% logic, 19.2% route)
+
+=========================================================================
+CPU : 8.30 / 8.56 s | Elapsed : 8.00 / 8.00 s
+ 
+--> 
+
+Total memory usage is 185976 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   42 (   0 filtered)
+Number of infos    :   40 (   0 filtered)
+

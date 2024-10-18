@@ -1,0 +1,29 @@
+ command line:
+   ./tb_Processor_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  51088
+
+Fri Oct 18 20:26:13 2024
+
+WARNING:Simulator:434 - Module IFU does not have a `timescale directive but
+   previous modules do.
+Total Line Count = 158
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 80.597 Meg. 
+
+ Total signals 51
+ Total nets 176
+ Total signal drivers 13
+ Total blocks 9
+ Total primitive blocks 5
+ Total processes 19
+ntrace select -o on -n /tb_Processor_v/zero 
+ntrace select -o on -n /tb_Processor_v/clock 
+ntrace select -o on -n /tb_Processor_v/reset 
+ntrace start 
+run 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

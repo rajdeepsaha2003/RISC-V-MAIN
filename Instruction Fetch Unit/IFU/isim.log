@@ -1,0 +1,27 @@
+ command line:
+   ./tb_IFU_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  51126
+
+Fri Oct 18 20:31:40 2024
+
+Total Line Count = 86
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 78.209 Meg. 
+
+ Total signals 15
+ Total nets 74
+ Total signal drivers 7
+ Total blocks 4
+ Total primitive blocks 2
+ Total processes 13
+ntrace select -o on -n /tb_IFU_v/Instruction_Code 
+ntrace select -o on -n /tb_IFU_v/clock 
+ntrace select -o on -n /tb_IFU_v/reset 
+ntrace start 
+run 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

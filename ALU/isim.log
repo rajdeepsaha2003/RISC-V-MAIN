@@ -1,0 +1,29 @@
+ command line:
+   ./tb_ALU_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  51181
+
+Fri Oct 18 20:39:32 2024
+
+Total Line Count = 81
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 78.2008 Meg. 
+
+ Total signals 15
+ Total nets 109
+ Total signal drivers 8
+ Total blocks 3
+ Total primitive blocks 2
+ Total processes 11
+ntrace select -o on -n /tb_ALU_v/alu_result 
+ntrace select -o on -n /tb_ALU_v/zero_flag 
+ntrace select -o on -n /tb_ALU_v/alu_control 
+ntrace select -o on -n /tb_ALU_v/in1 
+ntrace select -o on -n /tb_ALU_v/in2 
+ntrace start 
+run 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

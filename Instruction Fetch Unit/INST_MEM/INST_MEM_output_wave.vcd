@@ -1,0 +1,149 @@
+$date
+   Thu Oct 17 21:36:28 2024
+$end
+$version
+  I.24
+$end
+$timescale
+  1fs
+$end
+$scope module INST_MEM_tb_v $end
+$var wire 1 %! INST_CODE [0] $end
+$var wire 1 $! INST_CODE [1] $end
+$var wire 1 #! INST_CODE [2] $end
+$var wire 1 "! INST_CODE [3] $end
+$var wire 1 !! INST_CODE [4] $end
+$var wire 1 ~ INST_CODE [5] $end
+$var wire 1 } INST_CODE [6] $end
+$var wire 1 | INST_CODE [7] $end
+$var wire 1 { INST_CODE [8] $end
+$var wire 1 z INST_CODE [9] $end
+$var wire 1 y INST_CODE [10] $end
+$var wire 1 x INST_CODE [11] $end
+$var wire 1 w INST_CODE [12] $end
+$var wire 1 v INST_CODE [13] $end
+$var wire 1 u INST_CODE [14] $end
+$var wire 1 t INST_CODE [15] $end
+$var wire 1 s INST_CODE [16] $end
+$var wire 1 r INST_CODE [17] $end
+$var wire 1 q INST_CODE [18] $end
+$var wire 1 p INST_CODE [19] $end
+$var wire 1 o INST_CODE [20] $end
+$var wire 1 n INST_CODE [21] $end
+$var wire 1 m INST_CODE [22] $end
+$var wire 1 l INST_CODE [23] $end
+$var wire 1 k INST_CODE [24] $end
+$var wire 1 j INST_CODE [25] $end
+$var wire 1 i INST_CODE [26] $end
+$var wire 1 h INST_CODE [27] $end
+$var wire 1 g INST_CODE [28] $end
+$var wire 1 f INST_CODE [29] $end
+$var wire 1 e INST_CODE [30] $end
+$var wire 1 d INST_CODE [31] $end
+$var reg 1 A RESET $end
+$var reg 32 B PC $end
+$scope module INST_MEM_module $end
+$var wire 1 b PC [0] $end
+$var wire 1 a PC [1] $end
+$var wire 1 ` PC [2] $end
+$var wire 1 _ PC [3] $end
+$var wire 1 ^ PC [4] $end
+$var wire 1 ] PC [5] $end
+$var wire 1 \ PC [6] $end
+$var wire 1 [ PC [7] $end
+$var wire 1 Z PC [8] $end
+$var wire 1 Y PC [9] $end
+$var wire 1 X PC [10] $end
+$var wire 1 W PC [11] $end
+$var wire 1 V PC [12] $end
+$var wire 1 U PC [13] $end
+$var wire 1 T PC [14] $end
+$var wire 1 S PC [15] $end
+$var wire 1 R PC [16] $end
+$var wire 1 Q PC [17] $end
+$var wire 1 P PC [18] $end
+$var wire 1 O PC [19] $end
+$var wire 1 N PC [20] $end
+$var wire 1 M PC [21] $end
+$var wire 1 L PC [22] $end
+$var wire 1 K PC [23] $end
+$var wire 1 J PC [24] $end
+$var wire 1 I PC [25] $end
+$var wire 1 H PC [26] $end
+$var wire 1 G PC [27] $end
+$var wire 1 F PC [28] $end
+$var wire 1 E PC [29] $end
+$var wire 1 D PC [30] $end
+$var wire 1 C PC [31] $end
+$var wire 1 c reset $end
+$var wire 1 %! Instruction_Code [0] $end
+$var wire 1 $! Instruction_Code [1] $end
+$var wire 1 #! Instruction_Code [2] $end
+$var wire 1 "! Instruction_Code [3] $end
+$var wire 1 !! Instruction_Code [4] $end
+$var wire 1 ~ Instruction_Code [5] $end
+$var wire 1 } Instruction_Code [6] $end
+$var wire 1 | Instruction_Code [7] $end
+$var wire 1 { Instruction_Code [8] $end
+$var wire 1 z Instruction_Code [9] $end
+$var wire 1 y Instruction_Code [10] $end
+$var wire 1 x Instruction_Code [11] $end
+$var wire 1 w Instruction_Code [12] $end
+$var wire 1 v Instruction_Code [13] $end
+$var wire 1 u Instruction_Code [14] $end
+$var wire 1 t Instruction_Code [15] $end
+$var wire 1 s Instruction_Code [16] $end
+$var wire 1 r Instruction_Code [17] $end
+$var wire 1 q Instruction_Code [18] $end
+$var wire 1 p Instruction_Code [19] $end
+$var wire 1 o Instruction_Code [20] $end
+$var wire 1 n Instruction_Code [21] $end
+$var wire 1 m Instruction_Code [22] $end
+$var wire 1 l Instruction_Code [23] $end
+$var wire 1 k Instruction_Code [24] $end
+$var wire 1 j Instruction_Code [25] $end
+$var wire 1 i Instruction_Code [26] $end
+$var wire 1 h Instruction_Code [27] $end
+$var wire 1 g Instruction_Code [28] $end
+$var wire 1 f Instruction_Code [29] $end
+$var wire 1 e Instruction_Code [30] $end
+$var wire 1 d Instruction_Code [31] $end
+$var reg 256 &! Memory $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx &!
+0A
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx B
+x%!
+x$!
+x#!
+x"!
+x!!
+x~
+x}
+x|
+x{
+xz
+xy
+xx
+xw
+xv
+xu
+xt
+xs
+xr
+xq
+xp
+xo
+xn
+xm
+xl
+xk
+xj
+xi
+xh
+xg
+x

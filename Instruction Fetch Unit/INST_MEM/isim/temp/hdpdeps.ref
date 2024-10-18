@@ -1,0 +1,14 @@
+V3 9
+FL $XILINX/verilog/src/glbl.v 2005/11/16.16:04:44 I.24
+MO isim_temp/glbl       FL $XILINX/verilog/src/glbl.v
+FL "C:/Users/rajde/OneDrive/Desktop/RISC-V/Instruction Fetch Unit/INST_MEM/tb_inst_mem.v" 2024/10/18.20:48:02 I.24
+MO isim_temp/tb_inst_mem_v \
+      FL "C:/Users/rajde/OneDrive/Desktop/RISC-V/Instruction Fetch Unit/INST_MEM/tb_inst_mem.v" \
+      MI INST_MEM
+FL "C:/Users/rajde/OneDrive/Desktop/RISC-V/Instruction Fetch Unit/INST_MEM/INST_MEM_tb.v" 2024/10/18.19:16:39 I.24
+MO isim_temp/tb_INST_MEM \
+      FL "C:/Users/rajde/OneDrive/Desktop/RISC-V/Instruction Fetch Unit/INST_MEM/INST_MEM_tb.v" \
+      MI INST_MEM
+FL "C:/Users/rajde/OneDrive/Desktop/RISC-V/Instruction Fetch Unit/INST_MEM/INST_MEM.v" 2024/10/18.20:46:24 I.24
+MO isim_temp/INST_MEM \
+      FL "C:/Users/rajde/OneDrive/Desktop/RISC-V/Instruction Fetch Unit/INST_MEM/INST_MEM.v"

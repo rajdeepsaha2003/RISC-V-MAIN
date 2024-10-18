@@ -1,0 +1,4 @@
+verilog work "IFU.v"
+verilog work "DATAPATH.v"
+verilog work "CONTROL.v"
+verilog work "Processor.v"

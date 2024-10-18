@@ -1,0 +1,1 @@
+xst -ise "C:/Users/rajde/OneDrive/Desktop/RISC-V/ALU/ALU" -intstyle ise -ifn ALU.xst -ofn ALU.syr

@@ -1,0 +1,5 @@
+MO REG_FILE NULL C:/Users/rajde/OneDrive/Desktop/RISC-V/Register_File/Reg_File.v vlg09/_r_e_g___f_i_l_e.bin 1729261676
+MO DATAPATH NULL C:\Users\rajde\OneDrive\Desktop\RISC-V\DATAPATH/DATAPATH.v vlg27/_d_a_t_a_p_a_t_h.bin 1729263912
+MO glbl NULL E:/Xilinx/verilog/src/glbl.v vlg2D/glbl.bin 1729261679
+MO ALU NULL C:/Users/rajde/OneDrive/Desktop/RISC-V/ALU/ALU.v vlg2A/_a_l_u.bin 1729261677
+MO tb_DATAPATH_v NULL C:\Users\rajde\OneDrive\Desktop\RISC-V\DATAPATH/tb_DATAPATH.v vlg55/tb___d_a_t_a_p_a_t_h__v.bin 1729263913

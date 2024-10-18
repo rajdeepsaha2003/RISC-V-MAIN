@@ -1,0 +1,5 @@
+verilog isim_temp "C:/Users/rajde/OneDrive/Desktop/RISC-V/Register_File/Reg_File.v"
+verilog isim_temp "C:/Users/rajde/OneDrive/Desktop/RISC-V/ALU/ALU.v"
+verilog isim_temp "DATAPATH.v"
+verilog isim_temp "tb_DATAPATH.v"
+verilog isim_temp "E:/Xilinx/verilog/src/glbl.v"

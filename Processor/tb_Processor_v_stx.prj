@@ -1,0 +1,4 @@
+verilog isim_temp "Processor.v"
+verilog isim_temp "IFU.v"
+verilog isim_temp "tb_Processor.v"
+verilog isim_temp "E:/Xilinx/verilog/src/glbl.v"

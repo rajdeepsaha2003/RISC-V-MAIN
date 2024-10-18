@@ -1,0 +1,380 @@
+Release 8.1i - xst I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.21 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.21 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: DATAPATH.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+     5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DATAPATH.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DATAPATH"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-pq208
+
+---- Source Options
+Top Module Name                    : DATAPATH
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : DATAPATH.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "C:/Users/rajde/OneDrive/Desktop/RISC-V/Register_File/Reg_File.v" in library work
+Compiling verilog file "C:/Users/rajde/OneDrive/Desktop/RISC-V/ALU/ALU.v" in library work
+Module <REG_FILE> compiled
+Compiling verilog file "DATAPATH.v" in library work
+Module <ALU> compiled
+Module <DATAPATH> compiled
+No errors in compilation
+Analysis of file <"DATAPATH.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <DATAPATH>.
+Module <DATAPATH> is correct for synthesis.
+ 
+Analyzing module <REG_FILE>.
+Module <REG_FILE> is correct for synthesis.
+ 
+Analyzing module <ALU>.
+Module <ALU> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/rajde/OneDrive/Desktop/RISC-V/ALU/ALU.v".
+WARNING:Xst:643 - "C:/Users/rajde/OneDrive/Desktop/RISC-V/ALU/ALU.v" line 64: The result of a 32x32-bit multiplication is partially used. Only the 32 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+WARNING:Xst:737 - Found 32-bit latch for signal <$old_alu_result_1>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefuly review if it was in your intentions to describe such a latch.
+    Found 32-bit shifter logical left for signal <$n0006> created at line 62.
+    Found 32-bit shifter logical right for signal <$n0007> created at line 63.
+    Found 32-bit addsub for signal <$n0008>.
+    Found 32x32-bit multiplier for signal <$n0009> created at line 64.
+    Found 32-bit 9-to-1 multiplexer for signal <$n0010>.
+    Found 32-bit xor2 for signal <$n0012> created at line 65.
+    Found 32-bit comparator less for signal <$n0018> created at line 57.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   1 Comparator(s).
+	inferred  32 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <REG_FILE>.
+    Related source file is "C:/Users/rajde/OneDrive/Desktop/RISC-V/Register_File/Reg_File.v".
+WARNING:Xst:647 - Input <reset> is never used.
+WARNING:Xst:1872 - Variable <i> is used but never assigned.
+    Found 32x32-bit ROM for signal <read_data2>.
+    Found 32x32-bit ROM for signal <read_data1>.
+    Found 1024-bit register for signal <reg_memory>.
+INFO:Xst:738 - HDL ADVISOR - 1024 flip-flops were inferred for signal <reg_memory>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   2 ROM(s).
+	inferred 1024 D-type flip-flop(s).
+Unit <REG_FILE> synthesized.
+
+
+Synthesizing Unit <DATAPATH>.
+    Related source file is "DATAPATH.v".
+Unit <DATAPATH> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 32x32-bit ROM                                         : 2
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 1
+ 32-bit addsub                                         : 1
+# Registers                                            : 32
+ 32-bit register                                       : 32
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 32-bit 9-to-1 multiplexer                             : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 32x32-bit ROM                                         : 2
+# Multipliers                                          : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 1
+ 32-bit addsub                                         : 1
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 32-bit 9-to-1 multiplexer                             : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Loading device for application Rf_Device from file '3s50.nph' in environment E:\Xilinx.
+
+Optimizing unit <DATAPATH> ...
+
+Optimizing unit <ALU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DATAPATH, actual ratio is 23.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DATAPATH.ngr
+Top Level Output File Name         : DATAPATH
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 489
+#      GND                         : 1
+#      LUT2                        : 67
+#      LUT3                        : 95
+#      LUT4                        : 118
+#      MUXCY                       : 99
+#      MUXF5                       : 42
+#      MUXF6                       : 6
+#      VCC                         : 1
+#      XORCY                       : 60
+# FlipFlops/Latches                : 32
+#      LD                          : 32
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 15
+#      IBUF                        : 14
+#      OBUF                        : 1
+# MULTs                            : 3
+#      MULT18X18                   : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                     162  out of    768    21%  
+ Number of Slice Flip Flops:            32  out of   1536     2%  
+ Number of 4 input LUTs:               280  out of   1536    18%  
+ Number of bonded IOBs:                 15  out of    124    12%  
+ Number of MULT18X18s:                   3  out of      4    75%  
+ Number of GCLKs:                        1  out of      8    12%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------+----------------------------------------+-------+
+Clock Signal                            | Clock buffer(FF name)                  | Load  |
+----------------------------------------+----------------------------------------+-------+
+alu_module/_n00191(alu_module/_n00191:O)| BUFG(*)(alu_module/_old_alu_result_1_8)| 32    |
+----------------------------------------+----------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 16.759ns
+   Maximum output required time after clock: 8.628ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'alu_module/_n00191'
+  Total number of paths / destination ports: 112974 / 32
+-------------------------------------------------------------------------
+Offset:              16.759ns (Levels of Logic = 12)
+  Source:            read_reg_num2<2> (PAD)
+  Destination:       alu_module/_old_alu_result_1_31 (LATCH)
+  Destination Clock: alu_module/_n00191 falling
+
+  Data Path: read_reg_num2<2> to alu_module/_old_alu_result_1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   0.715   1.527  read_reg_num2_2_IBUF (read_reg_num2_2_IBUF)
+     LUT4:I0->O           34   0.479   1.585  Mrom_data_reg_file_module/Mrom_read_data23 (N38)
+     MULT18X18:B4->P29     1   4.098   0.976  alu_module/Mmult__n0009_submult_0 (alu_module/Mmult__n0009_submult_0_29)
+     LUT2:I0->O            1   0.479   0.000  alu_module/ALU_Mmult__n0009_sum_29lut (alu_module/N82)
+     MUXCY:S->O            1   0.435   0.000  alu_module/ALU_Mmult__n0009_sum_29cy (alu_module/ALU_Mmult__n0009_sum_29_cyo)
+     XORCY:CI->O           1   0.786   0.976  alu_module/ALU_Mmult__n0009_sum_30_xor (alu_module/Mmult__n0009_sum_30)
+     LUT2:I0->O            1   0.479   0.000  alu_module/ALU__n0009<30>lut (alu_module/N98)
+     MUXCY:S->O            0   0.435   0.000  alu_module/ALU__n0009<30>cy (alu_module/ALU__n0009<30>_cyo)
+     XORCY:CI->O           1   0.786   0.704  alu_module/ALU__n0009<31>_xor (alu_module/_n0009<31>)
+     LUT4:I3->O            1   0.479   0.000  alu_module/alu_control<2>_rn_23111_F (N437)
+     MUXF5:I0->O           1   0.314   0.851  alu_module/alu_control<2>_rn_23111 (alu_module/mux_55_alu_control<2>_MUXF624)
+     LUT2:I1->O            1   0.479   0.000  alu_module/alu_control<3>241 (alu_module/_n0010<31>)
+     LD:D                      0.176          alu_module/_old_alu_result_1_31
+    ----------------------------------------
+    Total                     16.759ns (10.140ns logic, 6.619ns route)
+                                       (60.5% logic, 39.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'alu_module/_n00191'
+  Total number of paths / destination ports: 32 / 1
+-------------------------------------------------------------------------
+Offset:              8.628ns (Levels of Logic = 10)
+  Source:            alu_module/_old_alu_result_1_8 (LATCH)
+  Destination:       zero_flag (PAD)
+  Source Clock:      alu_module/_n00191 falling
+
+  Data Path: alu_module/_old_alu_result_1_8 to zero_flag
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.551   0.976  alu_module/_old_alu_result_1_8 (alu_module/_old_alu_result_1_8)
+     LUT4:I0->O            1   0.479   0.000  alu_module/_n0015_wg_sel (N01)
+     MUXCY:S->O            1   0.435   0.000  alu_module/_n0015_wg_cy (alu_module/_n0015_wg_cy)
+     MUXCY:CI->O           1   0.056   0.000  alu_module/_n0015_wg_cy_rn_0 (alu_module/_n0015_wg_cy1)
+     MUXCY:CI->O           1   0.056   0.000  alu_module/_n0015_wg_cy_rn_1 (alu_module/_n0015_wg_cy2)
+     MUXCY:CI->O           1   0.056   0.000  alu_module/_n0015_wg_cy_rn_2 (alu_module/_n0015_wg_cy3)
+     MUXCY:CI->O           1   0.056   0.000  alu_module/_n0015_wg_cy_rn_3 (alu_module/_n0015_wg_cy4)
+     MUXCY:CI->O           1   0.056   0.000  alu_module/_n0015_wg_cy_rn_4 (alu_module/_n0015_wg_cy5)
+     MUXCY:CI->O           1   0.056   0.000  alu_module/_n0015_wg_cy_rn_5 (alu_module/_n0015_wg_cy6)
+     MUXCY:CI->O           1   0.265   0.681  alu_module/_n0015_wg_cy_rn_6 (alu_module/_n0015_wg_cy7)
+     OBUF:I->O                 4.909          zero_flag_OBUF (zero_flag)
+    ----------------------------------------
+    Total                      8.628ns (6.972ns logic, 1.657ns route)
+                                       (80.8% logic, 19.2% route)
+
+=========================================================================
+CPU : 7.70 / 7.93 s | Elapsed : 8.00 / 8.00 s
+ 
+--> 
+
+Total memory usage is 185400 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

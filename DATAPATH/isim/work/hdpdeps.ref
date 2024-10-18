@@ -1,0 +1,15 @@
+V3 13
+FL $XILINX/verilog/src/glbl.v 2005/11/16.16:04:44 I.24
+MO work/glbl            FL $XILINX/verilog/src/glbl.v
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Register_File/Reg_File.v 2024/10/18.19:49:45 I.24
+MO work/REG_FILE \
+      FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Register_File/Reg_File.v
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/DATAPATH/DATAPATH.v 2024/10/18.20:34:28 I.24
+MO work/DATAPATH        FL C:/Users/rajde/OneDrive/Desktop/RISC-V/DATAPATH/DATAPATH.v \
+      MI ALU            MI REG_FILE
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/ALU/ALU.v 2024/10/18.19:28:29 I.24
+MO work/ALU             FL C:/Users/rajde/OneDrive/Desktop/RISC-V/ALU/ALU.v
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/DATAPATH/tb_DATAPATH.v 2024/10/18.20:35:07 I.24
+MO work/tb_DATAPATH_v \
+      FL C:/Users/rajde/OneDrive/Desktop/RISC-V/DATAPATH/tb_DATAPATH.v \
+      MI DATAPATH

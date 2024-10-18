@@ -1,0 +1,1 @@
+xst -ise "C:/Users/rajde/OneDrive/Desktop/RISC-V/Processor/Processor" -intstyle ise -ifn PROCESSOR.xst -ofn PROCESSOR.syr

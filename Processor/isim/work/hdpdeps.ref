@@ -1,0 +1,24 @@
+V3 26
+FL $XILINX/verilog/src/glbl.v 2005/11/16.16:04:44 I.24
+MO work/glbl            FL $XILINX/verilog/src/glbl.v
+FL IFU.v 2024/10/17.21:25:20 I.24 FL INST_MEM.v
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Processor/tb_Processor.v 2024/10/18.20:25:58 I.24
+MO work/tb_Processor_v \
+      FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Processor/tb_Processor.v \
+      MI PROCESSOR
+FL ALU.v 2024/10/17.21:25:20 I.24
+MO work/ALU             FL ALU.v
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Processor/Processor.v 2024/10/18.20:24:23 I.24 FL CONTROL.v FL DATAPATH.v FL IFU.v
+MO work/PROCESSOR       FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Processor/Processor.v \
+      MI CONTROL        MI DATAPATH       MI IFU
+FL CONTROL.v 2024/10/17.21:25:20 I.24
+MO work/CONTROL         FL CONTROL.v
+FL REG_FILE.v 2024/10/17.21:25:20 I.24
+MO work/REG_FILE        FL REG_FILE.v
+FL DATAPATH.v 2024/10/17.21:25:20 I.24 FL REG_FILE.v FL ALU.v
+MO work/DATAPATH        FL DATAPATH.v     MI ALU            MI REG_FILE
+FL INST_MEM.v 2024/10/17.21:25:20 I.24
+MO work/INST_MEM        FL INST_MEM.v
+FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Processor/IFU.v 2024/10/17.21:25:20 I.24 FL INST_MEM.v
+MO work/IFU             FL C:/Users/rajde/OneDrive/Desktop/RISC-V/Processor/IFU.v \
+      MI INST_MEM

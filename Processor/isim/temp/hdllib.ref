@@ -1,0 +1,9 @@
+MO PROCESSOR NULL C:\Users\rajde\OneDrive\Desktop\RISC-V\Processor/Processor.v vlg54/_p_r_o_c_e_s_s_o_r.bin 1729260735
+MO INST_MEM NULL INST_MEM.v vlg64/_i_n_s_t___m_e_m.bin 1729260735
+MO CONTROL NULL CONTROL.v vlg01/_c_o_n_t_r_o_l.bin 1729260735
+MO REG_FILE NULL REG_FILE.v vlg09/_r_e_g___f_i_l_e.bin 1729260735
+MO tb_Processor_v NULL C:\Users\rajde\OneDrive\Desktop\RISC-V\Processor/tb_Processor.v vlg0E/tb___processor__v.bin 1729260735
+MO DATAPATH NULL DATAPATH.v vlg27/_d_a_t_a_p_a_t_h.bin 1729260735
+MO IFU NULL IFU.v vlg54/_i_f_u.bin 1729260735
+MO glbl NULL E:/Xilinx/verilog/src/glbl.v vlg2D/glbl.bin 1729260735
+MO ALU NULL ALU.v vlg2A/_a_l_u.bin 1729260735

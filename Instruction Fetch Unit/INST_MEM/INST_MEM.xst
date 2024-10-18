@@ -1,0 +1,4 @@
+set -tmpdir ./xst/projnav.tmp
+elaborate
+-ifn INST_MEM.prj
+-ifmt mixed

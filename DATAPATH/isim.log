@@ -1,0 +1,32 @@
+ command line:
+   ./tb_DATAPATH_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  51159
+
+Fri Oct 18 20:35:17 2024
+
+Total Line Count = 121
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 78.2868 Meg. 
+
+ Total signals 34
+ Total nets 127
+ Total signal drivers 14
+ Total blocks 5
+ Total primitive blocks 3
+ Total processes 21
+ntrace select -o on -n /tb_DATAPATH_v/zero_flag 
+ntrace select -o on -n /tb_DATAPATH_v/clock 
+ntrace select -o on -n /tb_DATAPATH_v/alu_control 
+ntrace select -o on -n /tb_DATAPATH_v/regwrite 
+ntrace select -o on -n /tb_DATAPATH_v/write_reg 
+ntrace select -o on -n /tb_DATAPATH_v/read_reg_num1 
+ntrace select -o on -n /tb_DATAPATH_v/read_reg_num2 
+ntrace select -o on -n /tb_DATAPATH_v/reset 
+ntrace start 
+run 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
